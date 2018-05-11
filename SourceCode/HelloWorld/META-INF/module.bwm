@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_WNJ60HcfEeeXtPKsgmkHLg" targetNamespace="http://tns.tibco.com/bw/composite/HelloWorld" name="HelloWorld" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_b8h4cHcfEeeXtPKsgmkHLg" name="gethello" promote="ComponentProcess/gethello">
+    <sca:interface.wsdl xmi:id="_b8vT0HcfEeeXtPKsgmkHLg" interface="http://xmlns.example.com/20170801211020PLT#wsdl.interface(gethello)" scaext:wsdlLocation="../Processes/helloworld/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_b866AHcfEeeXtPKsgmkHLg" name="RestService" path="/gethello" docBasePath="http://localhost:7777/HelloWorld" docResourcePath="getHello" basePath="/" connector="helloworld.getHello" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/helloworld.Process-getHello.json">
+      <operation xmi:id="_b88vMHcfEeeXtPKsgmkHLg" operationName="get" nickname="get-gethello" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_b-V2UHcfEeeXtPKsgmkHLg"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_b88vMXcfEeeXtPKsgmkHLg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_XQFXcHcfEeeXtPKsgmkHLg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XQj4kHcfEeeXtPKsgmkHLg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XQ2McHcfEeeXtPKsgmkHLg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XQ86IHcfEeeXtPKsgmkHLg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XRBLkHcfEeeXtPKsgmkHLg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XRKVgHcfEeeXtPKsgmkHLg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_XRQcIHcfEeeXtPKsgmkHLg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_WncqIHcfEeeXtPKsgmkHLg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_WncqIXcfEeeXtPKsgmkHLg" processName="helloworld.Process"/>
+    <sca:service xmi:id="_b8ajsHcfEeeXtPKsgmkHLg" name="gethello">
+      <sca:interface.wsdl xmi:id="_b8bx0HcfEeeXtPKsgmkHLg" interface="http://xmlns.example.com/20170801211020PLT#wsdl.interface(gethello)" scaext:wsdlLocation="../Processes/helloworld/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
