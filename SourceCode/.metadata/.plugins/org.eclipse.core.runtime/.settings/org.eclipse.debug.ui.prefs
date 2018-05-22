@@ -1,2 +1,7 @@
+com.tibco.bw.core.design.debug.ui.launch.existingApplications=HelloWorld.application/
+com.tibco.bw.core.design.debug.ui.launch.processesArg=HelloWorld.application\=helloworld.Process/
+com.tibco.bw.core.design.debug.ui.launch.selectedApplications=HelloWorld.application/
+com.tibco.bw.core.design.debug.ui.launch.selectedModules=HelloWorld/
+com.tibco.bw.core.design.debug.ui.launch.selectedProcesses=HelloWorld\=helloworld.Process/
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n

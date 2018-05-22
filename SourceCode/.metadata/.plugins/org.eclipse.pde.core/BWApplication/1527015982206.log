@@ -1,0 +1,9 @@
+!SESSION 2018-05-22 19:06:22.034 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -dev file:C:/Users/Manish/workspace1-GV/.metadata/.plugins/org.eclipse.pde.core/BWApplication/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog -console -clean
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-22 19:06:34.489
+!MESSAGE Bundle HelloWorld.application_1.0.0.qualifier [273] is not active.
