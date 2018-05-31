@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "helloworldgvnewcontainer",
-            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/helloworldgvnewrepo:latest",
+            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/helloworldgvnewrepo2:latest",
             "cpu": 10,
             "memory": 1024,
             "portMappings": [
@@ -14,8 +14,8 @@
             ],
 			"environment": [
 			  {
-				"name": "Name",
-				"value": "Goutham"
+				"name": "BW_APP_MONITORING_CONFIG",
+				"value": "{'url':'http://ec2-54-163-163-231.compute-1.amazonaws.com:8089'}"
 			  }
       
 			],
