@@ -1,9 +1,9 @@
 {
-    "family": "helloworldgvtask",
+    "family": "helloworldgvnewtask",
     "containerDefinitions": [
         {
-            "name": "helloworldgvcontainer",
-            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/helloworldgvrepo:latest",
+            "name": "helloworldgvnewcontainer",
+            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/helloworldgvnewrepo:latest",
             "cpu": 10,
             "memory": 1024,
             "portMappings": [
