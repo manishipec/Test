@@ -15,7 +15,7 @@
 			"environment": [
 			  {
 				"name": "BW_APP_MONITORING_CONFIG",
-				"value": "{'url':'http://ec2-54-163-163-231.compute-1.amazonaws.com:8089'}"
+				"value": "{\"url\":\"http://ec2-54-163-163-231.compute-1.amazonaws.com:8089\"}"
 			  }
       
 			],
